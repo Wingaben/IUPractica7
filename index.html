@@ -162,25 +162,29 @@
             <hr class="my-4">
 
             <div class="form-check">
-              <label class="form-check-label" for="same-address">Shipping address is the same as my billing
-                address</label>
-              <input type="checkbox" class="form-check-input" id="same-address">
-              <label class="form-check-label" for="save-info">Save this information for next time</label>
-              <input type="checkbox" class="form-check-input" id="save-info">
+              <fieldset>
+                <legend>More info</legend>
+                <label class="form-check-label" for="same-address">Shipping address is the same as my billing
+                  address</label>
+                <input type="checkbox" class="form-check-input" id="same-address">
+                <label class="form-check-label" for="save-info">Save this information for next time</label>
+                <input type="checkbox" class="form-check-input" id="save-info">
+              </fieldset>
             </div>
 
             <hr class="my-4">
 
-            <h4 class="mb-3">Payment</h4>
-
             <div class="form-check">
-              <input type="radio" id="credit" name="paymentMethod" type="radio" class="form-check-input" checked
-                required>
-              <label class="form-check-label" for="credit">Credit card</label><br />
-              <input type="radio" id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
-              <label class="form-check-label" for="debit">Debit card</label><br />
-              <input type="radio" id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
-              <label class="form-check-label" for="paypal">PayPal</label><br />
+              <fieldset>
+                <legend>Payment</legend>
+                <input type="radio" id="credit" name="paymentMethod" type="radio" class="form-check-input" checked
+                  required>
+                <label class="form-check-label" for="credit">Credit card</label><br />
+                <input type="radio" id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="debit">Debit card</label><br />
+                <input type="radio" id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="paypal">PayPal</label><br />
+              </fieldset>
             </div>
 
             <div class="row gy-3">
