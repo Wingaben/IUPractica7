@@ -21,8 +21,8 @@
     <main>
       <div class="py-5 text-center">
         <img class="d-block mx-auto mb-4" src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
-          alt="" width="72" height="57">
-        <h2>Checkout form</h2>
+          alt="texto alternativo" width="72" height="57">
+        <h1>Checkout form</h1>
         <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group
           has a validation state that can be triggered by attempting to submit the form without completing it.</p>
       </div>
@@ -70,7 +70,8 @@
 
           <form class="card p-2">
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Promo code">
+              <label for="promo">Promo</label>
+              <input type="text" id="promo" class="form-control" placeholder="Promo code">
               <button type="submit" class="btn btn-secondary">Redeem</button>
             </div>
           </form>
@@ -164,35 +165,27 @@
               <label class="form-check-label" for="same-address">Shipping address is the same as my billing
                 address</label>
               <input type="checkbox" class="form-check-input" id="same-address">
-              
+
             </div>
 
             <div class="form-check">
               <label class="form-check-label" for="save-info">Save this information for next time</label>
               <input type="checkbox" class="form-check-input" id="save-info">
-              
+
             </div>
 
             <hr class="my-4">
 
             <h4 class="mb-3">Payment</h4>
 
-            <div class="my-3">
-              <div class="form-check">
-                <label class="form-check-label" for="credit">Credit card</label>
-                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
-                
-              </div>
-              <div class="form-check">
-                <label class="form-check-label" for="debit">Debit card</label>
-                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
-                
-              </div>
-              <div class="form-check">
-                <label class="form-check-label" for="paypal">PayPal</label>
-                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
-                
-              </div>
+            <div class="form-check">
+              <input type="radio" id="credit" name="paymentMethod" type="radio" class="form-check-input" checked
+                required>
+              <label class="form-check-label" for="credit">Credit card</label><br />
+              <input type="radio" id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Debit card</label><br />
+              <input type="radio" id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="paypal">PayPal</label><br />
             </div>
 
             <div class="row gy-3">
